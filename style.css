@@ -8,5 +8,5 @@ body{
 .my-canvas{
     /* width: 100vw; */
     max-height: 100vh;
-    background-color: white;
+    background-color: black;
 }
