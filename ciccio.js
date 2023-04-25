@@ -14,9 +14,10 @@ function step() {
 
 
     if (newGeneration.isDead()) {
-        ctx.fillStyle = 'rgba(0,0,0,0.1)'
+        ctx.fillStyle = 'rgba(0,0,0,1)'
         ctx.fillRect(0, 0, myCanvas.width, myCanvas.height)
         newGeneration = Generation.generateRandom(50, myCanvas.width, myCanvas.height);
+        // ctx.strokeStyle = randomColor();
         rombo();
     }
     window.requestAnimationFrame(step);

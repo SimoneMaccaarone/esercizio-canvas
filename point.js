@@ -12,7 +12,7 @@ class Point {
     }
     draw(ctx) {
         ctx.fillStyle = (this.color);
-        ctx.fillRect(this.x, this.y, 20, 20);
+        ctx.fillRect(this.x, this.y, 20, 20) // random (Math.random()*30), (Math.random()*30)
     }
 
     static generateRandom(canvasWidth, canvasHeight) {
@@ -39,11 +39,11 @@ class Point {
         this.x += this.speedX;
         this.y += this.speedY;
 
-        if (Math.random() > 0.9) {
+        if (Math.random() > 0.8) {
             this.forceX = (Math.random() * 0.2) - 0.1;
         }
 
-        if (Math.random() > 0.9) {
+        if (Math.random() > 0.8) {
             this.forceY = (Math.random() * 0.2) - 0.1;
         }
 
